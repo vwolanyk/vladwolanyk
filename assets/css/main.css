@@ -3342,3 +3342,118 @@ input, select, textarea {
     }
 
   }
+
+/* =====================
+   TOOLBOX GRID
+   Replace old .devicon and #devimg rules at the bottom of main.css with these
+   ===================== */
+
+.toolbox-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1em 0.5em;
+  margin-bottom: 1em;
+}
+
+.toolbox-grid--8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.toolbox-grid--6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.toolbox-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.75em 0.25em;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.toolbox-item:hover {
+  background: #f4f8ff;
+}
+
+.toolbox-img {
+  height: 56px;
+  width: auto;
+  max-width: 72px;
+  object-fit: contain;
+  display: block;
+}
+
+.toolbox-font-icon {
+  font-size: 3.5em;
+  line-height: 1;
+  display: block;
+  margin: 0;
+  color: #2d90d6;
+}
+
+.toolbox-font-icon.colored {
+  color: unset !important;
+}
+
+.toolbox-label {
+  font-size: 0.58em;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.toolbox-item:hover .toolbox-label {
+  opacity: 1;
+}
+
+/* — Responsive — */
+
+@media screen and (max-width: 1024px) {
+  .toolbox-grid,
+  .toolbox-grid--6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .toolbox-grid--8 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .toolbox-grid,
+  .toolbox-grid--6,
+  .toolbox-grid--8 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .toolbox-img {
+    height: 42px;
+  }
+  .toolbox-font-icon {
+    font-size: 2.75em;
+  }
+  .toolbox-label {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .toolbox-grid,
+  .toolbox-grid--6,
+  .toolbox-grid--8 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+  }
+  .toolbox-img {
+    height: 32px;
+    max-width: 48px;
+  }
+  .toolbox-font-icon {
+    font-size: 2em;
+  }
+}

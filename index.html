@@ -35,9 +35,11 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
   </head>
   <body class="is-preload">
@@ -164,7 +166,6 @@
             <div class="features">
               <article>
                 <a
-                  href="https://mysite-s2di.onrender.com/"
                   class="image"
                   target="_blank"
                   ><img src="images/where-the-car-preview.png" alt=""
@@ -178,16 +179,13 @@
                     problem and this is my real life solution.
                   </p>
                   <p>
-                    <i>
-                      Ideal on mobile. Might take a moment for server to
-                      wake.</i
-                    >
+                    <i>Currently migrating to a new home server — back online soon!</i>
                   </p>
 
                   <h5><em>Personal Project</em></h5>
                   <a
-                    href="https://mysite-s2di.onrender.com/"
                     class="button primary fit small"
+                    disabled
                     target="_blank"
                     style="
                       float: right;
@@ -334,103 +332,213 @@
         <!-- Three -->
         <section id="three">
           <div class="container" style="margin: auto">
-            <h3 style="margin-bottom: 2em">The Tool Box</h3>
-            <div class="box alt">
-              <div class="row gtr-50 gtr-uniform">
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-rails-plain-wordmark colored devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-ruby-plain-wordmark colored devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-react-original-wordmark devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-javascript-plain colored devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i
-                      style="color: black; margin-top: 0"
-                      class="fab fa-aws devicon"
-                    ></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-mysql-plain-wordmark colored devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i
-                      class="devicon-postgresql-plain-wordmark colored devicon"
-                    ></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-html5-plain-wordmark colored devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-css3-plain-wordmark devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-heroku-original-wordmark devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i
-                      class="devicon-github-plain-wordmark colored devicon"
-                    ></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i class="devicon-sass-original devicon"></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><i
-                      class="devicon-bootstrap-plain-wordmark colored devicon"
-                    ></i
-                  ></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><img id="devimg" src="images/newrelic.png" alt=""
-                  /></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><img id="devimg" src="images/elastic.png" alt=""
-                  /></span>
-                </div>
-                <div class="col-3">
-                  <span class="image fit"
-                    ><img id="devimg" src="images/graphql.png" alt=""
-                  /></span>
-                </div>
+            <h3 style="margin-bottom: 0.5em">The Tool Box</h3>
+
+            <!-- Row 1: Languages & Frameworks -->
+            <div class="toolbox-grid">
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original-wordmark.svg"
+                  alt="Ruby"
+                />
+                <span class="toolbox-label">Ruby</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-original-wordmark.svg"
+                  alt="Rails"
+                />
+                <span class="toolbox-label">Rails</span>
+              </div>
+
+              <div class="toolbox-item">
+                <i class="devicon-react-original devicon toolbox-font-icon"></i>
+                <span class="toolbox-label">React</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg"
+                  alt="Vue"
+                />
+                <span class="toolbox-label">Vue</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                />
+                <span class="toolbox-label">TypeScript</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/elixir/elixir-original-wordmark.svg"
+                  alt="Elixir"
+                />
+                <span class="toolbox-label">Elixir</span>
               </div>
             </div>
-          </div>
-        </section>
+            <!-- Row 2: APIs & Data -->
+            <div class="toolbox-grid toolbox-grid--8">
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/openapi/openapi-original-wordmark.svg"
+                  alt="OpenAPI"
+                />
+                <span class="toolbox-label">OpenAPI</span>
+              </div>
 
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="images/graphql.png"
+                  alt="GraphQL"
+                />
+                <span class="toolbox-label">GraphQL</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+                  alt="PostgreSQL"
+                />
+                <span class="toolbox-label">PostgreSQL</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+                  alt="MySQL"
+                />
+                <span class="toolbox-label">MySQL</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="images/elastic.png"
+                  alt="Elasticsearch"
+                />
+                <span class="toolbox-label">Elasticsearch</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg"
+                  alt="Redis"
+                />
+                <span class="toolbox-label">Redis</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original-wordmark.svg"
+                  alt="RabbitMQ"
+                />
+                <span class="toolbox-label">RabbitMQ</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img
+                  class="toolbox-img"
+                  src="images/sidekiq.svg"
+                  alt="Sidekiq"
+                />
+                <span class="toolbox-label">Sidekiq</span>
+              </div>
+            </div>
+            <!-- Row 3: Infra & Observability -->
+            <div class="toolbox-grid toolbox-grid--8">
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" />
+                <span class="toolbox-label">AWS</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" alt="Docker" />
+                <span class="toolbox-label">Docker</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original-wordmark.svg" alt="Heroku" />
+                <span class="toolbox-label">Heroku</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original-wordmark.svg" alt="GitLab" />
+                <span class="toolbox-label">GitLab</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/circleci/circleci-plain-wordmark.svg" alt="CircleCI" />
+                <span class="toolbox-label">CircleCI</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original-wordmark.svg" alt="Grafana" />
+                <span class="toolbox-label">Grafana</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kibana/kibana-original-wordmark.svg" alt="Kibana" />
+                <span class="toolbox-label">Kibana</span>
+              </div>
+
+              <div class="toolbox-item">
+                <i class="devicon-sentry-original-wordmark colored toolbox-font-icon"></i>
+                <span class="toolbox-label">Sentry</span>
+              </div>
+
+            </div>
+
+            <!-- Row 4: AI & Integrations -->
+            <div class="toolbox-grid toolbox-grid--6">
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="images/claude.svg" alt="Claude" />
+                <span class="toolbox-label">Claude</span>
+              </div>
+
+              <!-- <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter" />
+                <span class="toolbox-label">Jupyter</span>
+              </div> -->
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="images/litellm.png" alt="LiteLLM" />
+                <span class="toolbox-label">LiteLLM</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twilio/twilio-original.svg" alt="Twilio" />
+                <span class="toolbox-label">Twilio</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="images/nylas.png" alt="Nylas" />
+                <span class="toolbox-label">Nylas</span>
+              </div>
+
+              <div class="toolbox-item">
+                <img class="toolbox-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original-wordmark.svg" alt="RabbitMQ" />
+                <span class="toolbox-label">RabbitMQ</span>
+              </div>
+            </div>
+        </section>
         <!-- Four -->
         <section id="four">
           <div class="container">
@@ -494,7 +602,7 @@
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; 2025 FluidTRANScryptions. All rights reserved.</li>
+            <li>&copy; 2026 FluidTRANScryptions. All rights reserved.</li>
             <br />
             <li>design template: HTML5 UP</li>
           </ul>
